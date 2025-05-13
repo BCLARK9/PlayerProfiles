@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reilly Clark – Player Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 40px;
+            color: #444;
+        }
+        
+        .profile-container {
+            display: flex;
+            align-items: flex-start;
+            /* Ensures vertical top alignment */
+            gap: 30px;
+        }
+        
+        .profile-image {
+            margin: 0;
+            /* Remove any default margin */
+            padding: 0;
+            display: flex;
+            align-items: flex-start;
+            /* Optional reinforcement */
+        }
+        
+        .profile-image img {
+            width: 265px;
+            border-radius: 8px;
+            display: block;
+            margin: 0;
+            /* Remove default image spacing */
+        }
+        
+        .profile-text h2:first-child {
+            max-width: 700px;
+            margin-top: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+        
+        h2 {
+            font-size: 16px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .lists-container {
+            display: flex;
+            gap: 40px;
+        }
+        
+        .lists-container>div {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+        
+        li {
+            margin-bottom: 6px;
+            white-space: nowrap;
+        }
+        
+        @media (max-width: 768px) {
+            .profile-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile-image img {
+                width: 100%;
+                max-width: 300px;
+            }
+            .profile-text {
+                max-width: 100%;
+            }
+            .lists-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .lists-container>div {
+                min-width: auto;
+            }
+            li {
+                white-space: normal;
+                /* allow wrapping on small screens */
+            }
+        }
+        
+        .video-placeholder {
+            margin-top: 20px;
+        }
+        
+        .video-box {
+            width: 100%;
+            height: 200px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .caption {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Rev Spring 14U 2025 – Player Profile</h1>
+
+    <div class="profile-container">
+        <div class="profile-image">
+            <img src="image1.png" alt="Reilly Clark">
+        </div>
+        <div class="profile-text">
+            <h2>Reilly (Riles) Clark, #60</h2>
+            <p><strong>Birth Month/Year:</strong> September 2011<br>
+                <strong>Travel Hockey Experience:</strong> 2.5 years<br>
+                <strong>Positions Played:</strong> |---W---|----D----|C|<br>
+                <strong>Shoots:</strong> Lefty<br>
+                <strong>Lives:</strong> Mahomet<br>
+                <strong>Other sports:</strong> Rec Softball<br></p>
+
+            <h2>
+                <p>Reilly is passionate about hockey and has shown continuous growth since joining Rev in 2021. She talks about playing college hockey someday and enjoys cutback escapes and body contact. Defense and Center are her favorite positions.</p><br>
+            </h2>
+
+            <div class="lists-container">
+                <div>
+                    <h2>Areas of Strength:</h2>
+                    <ul>
+                        <li>Strong inside and outside edgework</li>
+                        <li>Rapid cutback read and execution</li>
+                        <li>Ability to give and receive body contact</li>
+                        <li>Player tie-ups and angling</li>
+                        <li>Willing to work on shots and cardio at home</li>
+                        <li>Urgency and accountability on backchecks</li>
+                    </ul>
+
+                    <div class="video-placeholder">
+                        <video width="100%" controls>
+                        <source src="RcBackcheck-Contact.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                        <div class="caption">Strong backcheck and later body contact</div>
+                    </div>
+
+                    <div class="video-placeholder">
+                        <video width="100%" controls>
+                        <source src="RcStrongFC-BC.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                        <div class="caption">Proper forecheck pressure and later backcheck</div>
+                    </div>
+
+                </div>
+                <div>
+                    <h2>Areas to Develop:</h2>
+                    <ul>
+                        <li>Deeper sustained knee bend</li>
+                        <li>Quick play-making reaction time after escapes</li>
+                        <li>Strong shot with proper wrist snap</li>
+                        <li>Completing 1-hand pressure</li>
+                        <li>Strong puck acceptance (squeezing bottom hand)</li>
+                        <li>Rush maneuvers (stickhandling, chips)</li>
+                    </ul>
+
+                    <div class="video-placeholder">
+                        <video width="100%" controls>
+                        <source src="RcBackcheck-Contact.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                        <div class="caption">Strong backcheck and later body contact</div>
+                    </div>
+
+                    <div class="video-placeholder">
+                        <video width="100%" controls>
+                        <source src="RcStrongFC-BC.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                        <div class="caption">Proper forecheck pressure and later backcheck</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
