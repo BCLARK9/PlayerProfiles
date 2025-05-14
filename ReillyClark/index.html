@@ -2,8 +2,18 @@
 <html lang="en">
 
 <script>
+  document.body.innerHTML = ""; // Clear page until validated
+
   var password = prompt("Enter password to view this page:");
-  if (password !== "RC-2011!") {
+
+ if (password !== "RC-2011!") {
+    // Load page content after validation
+    document.body.innerHTML = `
+      <h1>Welcome!</h1>
+      <p>This is the protected content.</p>
+      <!-- Or use window.location.href to redirect to real content -->
+    `;
+  } else {
     document.body.innerHTML = "<h1>Access Denied</h1>";
   }
 </script>
